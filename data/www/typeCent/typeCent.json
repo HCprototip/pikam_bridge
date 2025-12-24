@@ -1,0 +1,139 @@
+{
+	"conjuntos": [
+		{
+			"nom": "4s",
+			"texto": "DESCRIBE EL CONJUNTO",
+			"img": "img/fondotest4.jpg",
+			"data": 0,
+			"partes": [
+				{
+					"nom": "TRACTORA",
+					"data": 1,
+					"ejes": [
+						{
+							"nom": "DIRECCIONAL",
+							"data": null,
+							"sensores": [
+								{
+									"nom": "I",
+									"data": null
+								}
+							],
+							"display": {
+								"n": 1,
+								"tipo": "disp",
+								"posX": 56,
+								"poxY": 90,
+								"color": "yellow"
+							}
+						},
+						{
+							"nom": "QUINTA RUEDA",
+							"data": 1,
+							"sensores": [
+								{
+									"nom": "D",
+									"data": 1
+								},
+								{
+									"nom": "I",
+									"data": 2
+								}
+							],
+							"display": {
+								"n": 2,
+								"tipo": "disp",
+								"posX": 64,
+								"poxY": 70,
+								"color": "yellow"
+							}
+						}
+					],
+					"display": {
+						"tipo": "disp",
+						"posX": 10,
+						"poxY": 90,
+						"color": "red",
+						"medida": 2
+					}
+				},
+				{
+					"nom": "SEMIREMOLQUE",
+					"data": 2,
+					"ejes": [
+						{
+							"nom": "CERVI",
+							"data": 2,
+							"sensores": [
+								{
+									"nom": "D",
+									"data": 3
+								},
+								{
+									"nom": "I",
+									"data": 4
+								}
+							],
+							"display": {
+								"n": 3,
+								"tipo": "disp",
+								"posX": 72,
+								"poxY": 50,
+								"color": "yellow"
+							}
+						},
+						{
+							"nom": "MEDIO",
+							"data": 3,
+							"sensores": [
+								{
+									"nom": "D",
+									"data": 5
+								},
+								{
+									"nom": "I",
+									"data": 6
+								}
+							],
+							"display": {
+								"n": 4,
+								"tipo": "disp",
+								"posX": 80,
+								"poxY": 30,
+								"color": "yellow"
+							}
+						},
+						{
+							"nom": "ULTIMO",
+							"data": 4,
+							"sensores": [
+								{
+									"nom": "D",
+									"data": 7
+								},
+								{
+									"nom": "I",
+									"data": 8
+								}
+							],
+							"display": {
+								"n": 5,
+								"tipo": "disp",
+								"posX": 88,
+								"poxY": 10,
+								"color": "yellow"
+							}
+						}
+					],
+					"display": {
+						"tipo": "disp",
+						"posX": 55,
+						"poxY": 90,
+						"color": "green",
+						"medida": 2
+					}
+				}
+			]
+		}
+	]
+}

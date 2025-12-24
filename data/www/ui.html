@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>BASCULA Pikam</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Descripció">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <link rel="stylesheet" type="text/css" href="estil.css">
+</head>
+
+<body>
+    
+
+    <div class="wrap" id="gap">
+        <div class="left-frame">
+            <div class="bar-panel">
+                <div class="conn" id="conn">
+                    <img class="conn_ICO" width="100px" alt="conexion" id="conn_OK">
+                    <img class="conn_ICO" width="100px" alt="conexion" id="conn_KO">
+                    <div class="conn_punt" id="conn_punt"></div>
+                </div>
+                <!-- Botones de conexión BLE y actualización -->
+                <div style="position: absolute; left: 150px; top: inherit; display: flex; gap: 10px;">
+                    <div class="bot_actualiza" style="position: relative; left: 0;" onclick="ConnectBLE()" id="btn_connect_ble">CONECTAR BLE</div>
+                    <div class="bot_actualiza" style="position: relative; left: 0;" onclick=Reload()>ACTUALIZA</div>
+                    <div class="bot_actualiza" style="position: relative; left: 0;" onclick="openConfigModal()">CONFIG</div>
+                </div>
+                <!-- PER NO MOSTRAR EL MODE EXTES COMENTAR SEGÜENT DIV
+                --> 
+                <div class="modos_visualizacion">
+                    <input title="tit" type="checkbox" id="check_ext" onchange = Switch(this.checked)>EXTENDIDO</input>
+                </div>
+                
+                
+            </div>
+            <div class="corner-bg">
+                <div class="corner"></div>
+            </div>
+        
+            <div class="content" id="content">
+                <div id="W_content" style = "display: none">
+                    <div class="text" id="txt0">CARGANDO</div>
+                        <div class="ccenter-frame" id = "ccenter"  onclick=Boto(0)>
+                            <div class="icenter-frame" id="centerfix">
+                                <div class="valor mega" id="visor"><span style='color: #333333;'>88888</span></div>
+                            </div>
+                            <div class="ileft-frame" id="ileft">
+                                <div class="valor2" id="txt_unidades">KG</div>
+                                <div class="valor2" id="txt_tipo_peso">TOTAL</div>
+                            </div>
+                        </div>
+                    <div class="text" id='txt1'>ESPERE</div>
+                </div>
+                <div id="P_content" style = "display: none" >
+                    <div class="text" id='txt00'>IMPRESORA</div>
+                    <div class="P_content">
+                        <label class="label" for="alb">ALBARÁN:</label>
+                        <input class="text_inp" type="tel" maxlength="5" onchange=ActualizaDatos() id='alb'>
+                        <label class="label" for="mat">MATRICULA:</label>
+                        <input class="text_inp" type="text" maxlength="7" onchange=ActualizaDatos() id='mat'>
+                        <label class="label" for="dt">FECHA / HORA:</label>
+                        <input type="datetime-local" class="text_inp" id="dt" oninput=ActualizaDatos() name="dt">
+                    </div>
+                </div>
+                <div id="E_content"  style = "display: none; " onclick=Boto(0)>
+                    <div class="E_title" id='E_title'></div> 
+                    <img class='E_imagen' id="E_image" alt="imagen"></img>                  
+                    <div id="items" >
+                    </div>
+                    <div class="dummyes" style = "display: none" > 
+                        <div id="Estiba_front">
+                            <img class = "estiba_svg" id = "EstibaFrontWheels_svg" alt="front_estiba">
+                            <img class = "estiba_svg" id = "EstibaFrontTruck_svg" alt="front_estiba">
+                            <div id="estiba_front_ind" class="estiba_front_ind"></div>
+                        </div>
+                        <div id="Estiba_left">
+                            <img style = "left:-7.5vw; top:-3vw" class = "estiba_svg" id = "EstibaLeftTruck_svg" alt="left_estiba">
+                            <div id="estiba_front_ind" class="estiba_front_ind"></div>
+                        </div>
+                        <div id="EstibaFixed">
+                            <img  class = "estiba_svg" id = "EstibaFixed_svg" alt="estiba">
+                        </div>
+                        <!-- <img class="conn_ICO" src="img/CONN_OK.svg" width="100px" alt="conexion" id="conn_OK"> -->
+                        <div class="ccenter-frame ajustat" id="total_dummy">
+                            <div class="icenter-frame" >
+                                <div class="valor gran" id="visor"><span style='color: #333333;'>88888</span></div>
+                            </div>
+                            <div class="ileft-frame" >
+                                <div class="valor2" >KG</div>
+                                <div class="valor2" >TOTAL</div>
+                            </div>
+                        </div>
+                        <div id="I_dis_7seg_dummy" class = "Item_7seg">
+                            <span class = "num_leyenda">5</span>
+                            <span class = "text_leyenda">TEXT</span>                       
+                            <span class="dis_7seg" id="item_dummy" >0000</span>
+                        </div>                        
+                        <div id="Chart_dummy" class="grafCont">
+                            <canvas width="200px" height="60px"></canvas>
+                        </div>
+                        <div class = 'I_estiba'></div> 
+                    </div>
+                </div>
+                <div id="T_content" style = "display: none" class="ticket">
+                    <div id="tick"></div>
+                </div>
+                <div id="L_content" class="carga" >
+                    <div class="loadExt">
+                        <div class="loadInt">
+                        <div class="loadBar" id="loadBar"></div></div>
+                        <div class="text_load" id="loadText">CARGANDO</div>
+                    </div>
+                </div>
+                </div>
+                <div class="footer" id="footer">
+                    <div class="footer_certificado" id='debug'>CER/CAL: </div>
+                    <div class="footer_alarma_off" id="alm1">TRAC</div>
+                    <div class="footer_alarma_off" id="alm2">REM</div>
+                    <div class="footer_tipo_peso" id="tpe">PESO</div>
+                    <div class="footer_remolque" id="rem">REM</div>   
+                </div>
+            </div>
+            <div class="rigth-frame">
+                <div class="minimiza" onclick=Minimiza() id="minimiza">
+                    <img class="minimiza_ICO" alt="" id = "img_minimiza">
+                </div>
+                <div>
+                    <div class="boto" id='bot1' onclick=Boto(4)>MENU</div>
+                    <div class="boto" id='bot2' onclick=Boto(2)>MENU</div>
+                    <div class="boto" id='bot3' onclick=Boto(3)>MENU</div>
+                    <div class="boto" id='bot4' onclick=Boto(1)>MENU</div>
+                    <div class="boto" id='bot5' onclick=BotoF(0)>IMP</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Configuración -->
+    <div id="configModal" class="popup" style="display: none;">
+        <div class="popup_content" style="max-width: 450px;">
+            <h2 style="margin: 0 0 20px 0; color: #212934; font-size: 1.8rem; text-align: center;">CONFIGURACIÓN TARVOS</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <!-- Nodo -->
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label style="font-weight: 600; color: #555;">Nodo:</label>
+                    <input type="text" id="config_adress" maxlength="2" placeholder="01" 
+                           style="padding: 10px; font-size: 1.2rem; border: 2px solid #ddd; border-radius: 4px; text-transform: uppercase;">
+                </div>
+
+                <!-- Red -->
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label style="font-weight: 600; color: #555;">Red:</label>
+                    <input type="text" id="config_net" maxlength="2" placeholder="01" 
+                           style="padding: 10px; font-size: 1.2rem; border: 2px solid #ddd; border-radius: 4px; text-transform: uppercase;">
+                </div>
+
+                <!-- Frecuencia -->
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label style="font-weight: 600; color: #555;">Frecuencia (MHz):</label>
+                    <input type="number" id="config_freq" step="0.05" min="863.0" max="870.0" placeholder="868.0" 
+                           style="padding: 10px; font-size: 1.2rem; border: 2px solid #ddd; border-radius: 4px;">
+                    <small style="color: #888; font-size: 0.9rem;">Rango: 863.0 - 870.0 MHz (pasos de 0.05)</small>
+                </div>
+
+                <!-- Botones -->
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <button onclick="sendConfig()" 
+                            style="flex: 1; padding: 12px; font-size: 1.2rem; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">
+                        GUARDAR
+                    </button>
+                    <button onclick="closeConfigModal()" 
+                            style="flex: 1; padding: 12px; font-size: 1.2rem; background: #f44336; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">
+                        CANCELAR
+                    </button>
+                </div>
+
+                <!-- Mensaje de respuesta -->
+                <div id="config_response" style="display: none; padding: 10px; border-radius: 4px; text-align: center; font-weight: 600;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/NoSleep.js"></script>
+<script src="js/type_cent.js"></script>
+<script src="js/ws.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/first.js"></script>
+
+</html>

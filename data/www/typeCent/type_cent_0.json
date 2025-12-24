@@ -1,0 +1,179 @@
+{
+  "type_visu": [
+    {
+      "titol": "",
+      "texto": "TEXTO EXTENDIDO PARA UTILIZAR SI HICIERA FALTA DESCRIBIR O TAL",
+      "img": "img/fondotest4.jpg",
+      "items": [
+        {
+          "n": 1,
+          "tipo": "disp",
+          "texto": "DIRECCIONAL Kg",
+          "posX": 60,
+          "poxY": 74,
+          "color": "yellow",
+          "data": 0
+        },
+        {
+          "n": 2,
+          "tipo": "disp",
+          "texto": "5ª RUEDA Kg",
+          "posX": 72,
+          "poxY": 50,
+          "color": "yellow",
+          "data": 1
+        },
+        {
+          "n": 3,
+          "tipo": "disp",
+          "texto": "REMOLQUE Kg",
+          "posX": 84,
+          "poxY": 26,
+          "color": "yellow",
+          "data": 2
+        },
+        {
+          "tipo": "disp",
+          "texto": "",
+          "posX": -4,
+          "poxY": 85,
+          "color": "yellow",
+          "medida": 0.70,
+          "data": 3
+        },
+        {
+          "tipo": "Estiba",
+          "texto": 5,
+          "posX": 0,
+          "poxY": 70,
+          "color": "blue",
+          "medida": 0.70
+        },
+        {
+          "tipo": "neto",
+          "texto": "KG NETOS",
+          "posX": -20,
+          "poxY": 25,
+          "color": "#72ed5f",
+          "medida": 0.45,
+          "id": "neto",
+          "data": 7
+        },        
+        {
+          "tipo": "total",
+          "texto": 0,
+          "posX": -10,
+          "poxY": 5,
+          "color": "yellow",
+          "medida": 1,
+          "id": "pesTotal",
+          "data": 0
+        }
+      ]
+    },
+    {
+      "titol": "SENSORES",
+      "texto": "TEXTO EXTENDIDO PARA UTILIZAR SI HICIERA FALTA DESCRIBIR O TAL",
+      "img": "img/CAL_error.jpg",
+      "items": [
+        {
+          "tipo": "disp",
+          "texto": "TRACTORA IZQ",
+          "posX": -5,
+          "poxY": 0,
+          "color": "#00d5ff",
+          "data" : 0
+        },
+        {
+          "tipo": "disp",
+          "texto": "TRACTORA DER",
+          "posX": -5,
+          "poxY": 25,
+          "color": "red",
+          "data" : 1
+        },
+        {
+          "tipo": "disp",
+          "texto": "REMOLQUE IZQ",
+          "posX": -5,
+          "poxY": 50,
+          "color": "#00d5ff",
+          "data" : 2
+        },
+        {
+          "tipo": "disp",
+          "texto": "REMOLQUE DER",
+          "posX": -5,
+          "poxY": 75,
+          "color": "red",
+          "data" : 3
+        },       
+        {
+          "tipo": "graf",
+          "texto": "TRACTORA",
+          "posX": 25,
+          "poxY": 2,
+          "color":  ["#00d5ff","red"],
+          "medida": 0.9,
+          "id": "graf1",
+          "dataSet" : [0, 1]
+        },
+        {
+          "tipo": "graf",
+          "texto": "REMOLQUE",
+          "posX": 25,
+          "poxY": 52,
+          "color": ["#00d5ff","red"],
+          "medida": 0.9,
+          "id": "graf2",
+          "dataSet" : [2, 3]
+        }
+      ]
+    },
+    {
+      "titol": "PESOS PARCIALES",
+      "texto": "TEXTO EXTENDIDO PARA UTILIZAR SI HICIERA FALTA DESCRIBIR O TAL",
+      "img": "img/CAL_error.jpg",
+      "items": [
+        {
+          "tipo": "disp",
+          "texto": "TRACTORA",
+          "posX": 20,
+          "poxY": 5,
+          "color": "red",
+          "medida": 1.2,
+          "data": 0
+        },
+        {
+          "tipo": "disp",
+          "texto": "REMOLQUE",
+          "posX": 20,
+          "poxY": 80,
+          "color": "green",
+          "medida": 1.2,
+          "data" : 1
+        },
+        {
+          "tipo": "graf",
+          "texto": "TRACTORA",
+          "posX": 20,
+          "poxY": 30,
+          "color": ["red"],
+          "medida": 0.9,
+          "id": "graf1",
+          "dataSet" : [0]
+        } ,
+        {
+          "tipo": "graf",
+          "texto": "REMOLQUE",
+          "posX": 20,
+          "poxY": 105,
+          "color": ["green"],
+          "medida": 0.9,
+          "id": "graf2",
+          "dataSet" : [1]
+        }
+      ]
+    }
+  ]
+}
