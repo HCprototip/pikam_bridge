@@ -166,7 +166,7 @@ function Rebut(data) {
         document.getElementById('config_adress').value = msg.GET_RC.ADRESS || '';
         document.getElementById('config_freq').value = msg.GET_RC.CHANNEL || '';
         document.getElementById('config_response').style.display = 'none';
-        return;
+        // No return - permitir procesar resto del JSON
     }
     
     // Manejar respuesta de configuración guardada
@@ -179,7 +179,7 @@ function Rebut(data) {
         } else {
             showConfigResponse('✗ Error al guardar configuración', false);
         }
-        return;
+        // No return - permitir procesar resto del JSON
     }
     
     if (msg.txt_bot != undefined) {
