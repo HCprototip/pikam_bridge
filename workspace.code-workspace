@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"functional": "cpp",
+			"sstream": "cpp",
+			"regex": "cpp",
+			"istream": "cpp",
+			"ostream": "cpp",
+			"random": "cpp",
+			"streambuf": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "V0_BLE_BRIDGE"
+	}
+}

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="FrontTrackEstiba.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="8.7988368"
+     inkscape:cx="105.75262"
+     inkscape:cy="65.122244"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="3829"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px"
+     width="100px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect926"
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 4.4490411,0.67968231 H 21.832523 c 0.63153,0 1.13994,0.50727799 1.13994,1.13739499 V 13.022657 l 0.77711,1.14436 v 6.18432 c 0,0.63012 -0.50841,1.13739 -1.13993,1.13739 H 3.2833671 c -0.631529,0 -0.751386,-0.50727 -0.751386,-1.13739 v -6.0629 l 0.777116,-1.41062 V 1.8170773 c 0,-0.630117 0.508415,-1.13739499 1.139944,-1.13739499 z"
+       sodipodi:nodetypes="sssccssssccss"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect926-4"
+       width="17.521599"
+       height="6.3128505"
+       x="4.4793353"
+       y="2.3540139"
+       rx="0.28950804"
+       ry="0.079015866"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.1018721,12.439097 H 19.378398"
+       id="path1279"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.1018721,13.804487 H 19.378398"
+       id="path19509"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.1018721,15.152917 H 19.378398"
+       id="path19511"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect19561"
+       width="2.6937699"
+       height="2.3572862"
+       x="3.6530643"
+       y="16.052134"
+       rx="2.454566"
+       ry="0.155"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect19643"
+       width="2.6937699"
+       height="2.3572862"
+       x="20.06081"
+       y="15.853852"
+       rx="2.454566"
+       ry="0.155"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect20232"
+       width="1.9651272"
+       height="5.2873712"
+       x="0.36745015"
+       y="3.1641717"
+       ry="0.66154575"
+       rx="0.66154575"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect20413"
+       width="1.9651272"
+       height="5.2873712"
+       x="23.860653"
+       y="3.1641717"
+       ry="0.66154575"
+       rx="0.66154575"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect23057"
+       width="8.1254702"
+       height="2.5996242"
+       x="9.0756254"
+       y="18.894091"
+       rx="2.454566"
+       ry="0.15500006"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#0000c0;fill-opacity:1;stroke:#ffffff;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1718"
+       width="17.521599"
+       height="6.3128505"
+       x="4.4793353"
+       y="2.3540139"
+       rx="0.28950804"
+       ry="0.079015866"
+       inkscape:export-filename="C:\Users\Manel\Desktop\ProyectosArduino\Projectes\PIKAM_ESP32\WIFI_AP\DEV\rect926.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="6.9039888"
+       height="8.1213465"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+IZtoGUvBAAAAAElFTkSuQmCC
+"
+       id="image1827"
+       x="35.744595"
+       y="3.7726307"
+       style="stroke-width:4.78048" />
+  </g>
+</svg>

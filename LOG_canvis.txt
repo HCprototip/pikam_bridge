@@ -1,0 +1,6 @@
+- Activat no envio de missatges repetits per WS
+- Desfaig excepció doble imatge a type cent (que es declarin diferents typeCent)
+
+TYPECENT
+tipo centralita (4S 8S...)
+Ve informada a les posicions 16-18 de la trama
